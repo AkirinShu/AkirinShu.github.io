@@ -1,0 +1,18 @@
+[
+    {
+        "id": "welcome",
+        "title": "欢迎来到我的博客",
+        "date": "2026-08-12",
+        "category": "生活",
+        "excerpt": "这是我的第一篇博客文章，介绍一下这个网站的用途和未来规划。",
+        "path": "articles/welcome.md"
+    },
+    {
+        "id": "learn-programming",
+        "title": "如何学习编程",
+        "date": "2026-08-10",
+        "category": "技术",
+        "excerpt": "分享一些学习编程的有效方法和资源推荐。",
+        "path": "articles/learn-programming.md"
+    }
+]
