@@ -1,16 +1,26 @@
 [
     {
-        "id": 1,
-        "name": "博客系统",
-        "description": "使用原生 HTML/CSS/JS 构建的静态博客系统，支持 Markdown 渲染。",
-        "status": "进行中",
-        "articles": [1, 2]
+        "name": "个人博客系统",
+        "description": "基于原生 HTML/CSS/JS 构建的静态博客网站",
+        "category": "Web 开发",
+        "tags": ["HTML", "CSS", "JavaScript"]
     },
     {
-        "id": 2,
-        "name": "笔记应用研究",
-        "description": "研究现代笔记软件的组织方式和交互设计。",
-        "status": "规划中",
-        "articles": []
+        "name": "笔记应用",
+        "description": "简洁的 Markdown 笔记管理工具",
+        "category": "Web 开发",
+        "tags": ["Markdown", "笔记"]
+    },
+    {
+        "name": "数据分析脚本",
+        "description": "Python 编写的数据处理和分析工具集",
+        "category": "数据科学",
+        "tags": ["Python", "数据分析"]
+    },
+    {
+        "name": "自动化工作流",
+        "description": "使用 GitHub Actions 实现的 CI/CD 流程",
+        "category": "DevOps",
+        "tags": ["GitHub Actions", "CI/CD"]
     }
 ]

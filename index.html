@@ -3,57 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的博客</title>
+    <title>个人博客</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <!-- 左侧边栏 -->
         <aside class="sidebar">
-            <div class="profile">
-                <img src="avatar.png" alt="头像" class="avatar">
-                <h1 class="name">你的名字</h1>
-                <p class="bio">简短的个人介绍</p>
-                <div class="social-links">
-                    <a href="#">GitHub</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Email</a>
+            <div class="profile-section">
+                <div class="avatar">
+                    <div class="avatar-placeholder">头像</div>
                 </div>
+                <h1 class="site-title">我的博客</h1>
+                <p class="bio">欢迎来到我的个人空间</p>
             </div>
-            <nav class="nav-menu">
-                <a href="#" class="nav-item active" data-section="articles">文章</a>
-                <a href="#" class="nav-item" data-section="research">研究区</a>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" data-view="home" class="nav-link active">首页</a></li>
+                    <li><a href="#" data-view="articles" class="nav-link">文章</a></li>
+                    <li><a href="#" data-view="projects" class="nav-link">项目</a></li>
+                </ul>
             </nav>
         </aside>
 
-        <!-- 右侧主内容区 -->
-        <main class="main-content">
-            <!-- 文章列表区域 -->
-            <section id="articles-section" class="content-section active">
-                <h2 class="section-title">文章列表</h2>
-                <div id="articles-list" class="articles-list">
-                    <!-- 文章列表将通过 JS 动态加载 -->
+        <!-- 右侧内容区 -->
+        <main class="content">
+            <!-- 首页视图 -->
+            <section id="home-view" class="view active">
+                <h2 class="section-title">最新文章</h2>
+                <div id="latest-articles" class="article-list"></div>
+                
+                <h2 class="section-title">项目展示</h2>
+                <div id="latest-projects" class="project-list"></div>
+            </section>
+
+            <!-- 文章列表视图 -->
+            <section id="articles-view" class="view">
+                <h2 class="section-title">全部文章</h2>
+                <div id="all-articles" class="article-list"></div>
+            </section>
+
+            <!-- 项目视图 -->
+            <section id="projects-view" class="view">
+                <h2 class="section-title">项目分类</h2>
+                <div class="projects-container">
+                    <div id="project-categories" class="project-categories"></div>
+                    <div id="project-detail" class="project-detail"></div>
                 </div>
             </section>
 
-            <!-- 研究区 -->
-            <section id="research-section" class="content-section">
-                <h2 class="section-title">研究区</h2>
-                <div class="research-nav">
-                    <button class="research-btn active" data-view="projects">项目视图</button>
-                    <button class="research-btn" data-view="folders">文件夹视图</button>
-                </div>
-                <div id="research-content" class="research-content">
-                    <!-- 研究区内容将通过 JS 动态加载 -->
-                </div>
-            </section>
-
-            <!-- 文章阅读区域 -->
-            <section id="article-view" class="content-section">
-                <button id="back-to-list" class="back-btn">← 返回列表</button>
-                <article id="article-content" class="article-content">
-                    <!-- 文章内容将通过 JS 动态加载 -->
-                </article>
+            <!-- 文章阅读视图 -->
+            <section id="article-view" class="view">
+                <button id="back-to-list" class="back-btn">返回列表</button>
+                <article id="article-content" class="article-content"></article>
             </section>
         </main>
     </div>
