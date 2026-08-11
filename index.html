@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧边栏 -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="avatar.png" alt="头像" class="avatar">
+                <h1 class="name">你的名字</h1>
+                <p class="bio">简短的个人介绍</p>
+                <div class="social-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Email</a>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-section="articles">文章</a>
+                <a href="#" class="nav-item" data-section="research">研究区</a>
+            </nav>
+        </aside>
+
+        <!-- 右侧主内容区 -->
+        <main class="main-content">
+            <!-- 文章列表区域 -->
+            <section id="articles-section" class="content-section active">
+                <h2 class="section-title">文章列表</h2>
+                <div id="articles-list" class="articles-list">
+                    <!-- 文章列表将通过 JS 动态加载 -->
+                </div>
+            </section>
+
+            <!-- 研究区 -->
+            <section id="research-section" class="content-section">
+                <h2 class="section-title">研究区</h2>
+                <div class="research-nav">
+                    <button class="research-btn active" data-view="projects">项目视图</button>
+                    <button class="research-btn" data-view="folders">文件夹视图</button>
+                </div>
+                <div id="research-content" class="research-content">
+                    <!-- 研究区内容将通过 JS 动态加载 -->
+                </div>
+            </section>
+
+            <!-- 文章阅读区域 -->
+            <section id="article-view" class="content-section">
+                <button id="back-to-list" class="back-btn">← 返回列表</button>
+                <article id="article-content" class="article-content">
+                    <!-- 文章内容将通过 JS 动态加载 -->
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

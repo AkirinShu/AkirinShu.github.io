@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "欢迎来到我的博客",
+        "date": "2025-01-01",
+        "tags": ["欢迎", "介绍"],
+        "excerpt": "这是我的第一篇博客文章，介绍一下这个博客的用途和规划。",
+        "file": "articles/welcome.md"
+    },
+    {
+        "id": 2,
+        "title": "如何学习编程",
+        "date": "2025-01-02",
+        "tags": ["编程", "学习"],
+        "excerpt": "分享一些我学习编程的经验和方法，希望能对大家有所帮助。",
+        "file": "articles/learn-programming.md"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "博客系统",
+        "description": "使用原生 HTML/CSS/JS 构建的静态博客系统，支持 Markdown 渲染。",
+        "status": "进行中",
+        "articles": [1, 2]
+    },
+    {
+        "id": 2,
+        "name": "笔记应用研究",
+        "description": "研究现代笔记软件的组织方式和交互设计。",
+        "status": "规划中",
+        "articles": []
+    }
+]
