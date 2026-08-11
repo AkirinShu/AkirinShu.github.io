@@ -84,20 +84,25 @@ class BlogApp {
     // 加载数据
     async loadData() {
         try {
+            // 获取基础路径（兼容 GitHub Pages 子目录部署）
+            const base_path = window.location.pathname.includes('/AkirinShu.github.io') 
+                ? '/AkirinShu.github.io/' 
+                : (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' ? '' : './');
+            
             // 加载文章列表
-            const articlesResponse = await fetch('data/articles.json');
+            const articlesResponse = await fetch(base_path + 'data/articles.json');
             if (articlesResponse.ok) {
                 this.articles = await articlesResponse.json();
             }
 
             // 加载项目数据
-            const projectsResponse = await fetch('data/projects.json');
+            const projectsResponse = await fetch(base_path + 'data/projects.json');
             if (projectsResponse.ok) {
                 this.projects = await projectsResponse.json();
             }
 
             // 加载文件夹结构
-            const foldersResponse = await fetch('data/folders.json');
+            const foldersResponse = await fetch(base_path + 'data/folders.json');
             if (foldersResponse.ok) {
                 this.folders = await foldersResponse.json();
             }
@@ -266,7 +271,12 @@ class BlogApp {
         contentContainer.innerHTML = '<p>加载中...</p>';
 
         try {
-            const response = await fetch(article.file);
+            // 获取基础路径（兼容 GitHub Pages 子目录部署）
+            const base_path = window.location.pathname.includes('/AkirinShu.github.io') 
+                ? '/AkirinShu.github.io/' 
+                : (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' ? '' : './');
+            
+            const response = await fetch(base_path + article.file);
             if (response.ok) {
                 const markdown = await response.text();
                 const html = MarkdownParser.parse(markdown);
