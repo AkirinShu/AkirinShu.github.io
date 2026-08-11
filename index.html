@@ -3,68 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="秋霖澍的个人博客 - 分享技术文章与项目成果">
     <title>秋霖澍的空间</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <div class="container">
         <!-- 左侧边栏 -->
         <aside class="sidebar">
             <div class="profile-section">
-                <!-- <div class="avatar">
-                    <div class="avatar-placeholder">头像</div>
-                </div> -->
                 <h1 class="site-title">秋霖澍</h1>
                 <p class="bio">Shuu-rinshu</p>
-                <a href="github.com/AkirinShu">Github</a>
-                <a href="space.bilibili.com/93628520">Bilibili</a>
+                <a href="https://github.com/AkirinShu">Github</a>
+                <a href="https://space.bilibili.com/93628520">Bilibili</a>
                 <p>QQ: 3541347237</p>
                 <p>Email: shuurinshu@qq.com</p>
             </div>
             
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#" data-view="home" class="nav-link active">首页</a></li>
-                    <li><a href="#" data-view="articles" class="nav-link">文章</a></li>
-                    <li><a href="#" data-view="projects" class="nav-link">项目</a></li>
+                    <li><a href="index.html" class="nav-link active">首页</a></li>
+                    <li><a href="articles/demo.html" class="nav-link">示例文章</a></li>
+                    <li><a href="projects.html" class="nav-link">项目</a></li>
                 </ul>
             </nav>
         </aside>
 
         <!-- 右侧内容区 -->
         <main class="content">
-            <!-- 首页视图 -->
-            <section id="home-view" class="view active">
+            <section class="view active">
                 <h2 class="section-title">最新文章</h2>
-                <div id="latest-articles" class="article-list"></div>
+                <div class="article-list">
+                    <article class="article-card">
+                        <h3><a href="articles/demo.html">示例文章：语义化 HTML 写作指南</a></h3>
+                        <p class="article-meta">发布于 2026-08-12</p>
+                        <p class="article-excerpt">本文演示如何使用语义化 HTML 类和 CSS 样式系统来编写文章，无需 Markdown 转换即可获得良好的阅读体验。</p>
+                    </article>
+                </div>
                 
                 <h2 class="section-title">项目展示</h2>
-                <div id="latest-projects" class="project-list"></div>
-            </section>
-
-            <!-- 文章列表视图 -->
-            <section id="articles-view" class="view">
-                <h2 class="section-title">全部文章</h2>
-                <div id="all-articles" class="article-list"></div>
-            </section>
-
-            <!-- 项目视图 -->
-            <section id="projects-view" class="view">
-                <h2 class="section-title">项目分类</h2>
-                <div class="projects-container">
-                    <div id="project-categories" class="project-categories"></div>
-                    <div id="project-detail" class="project-detail"></div>
+                <div class="project-list">
+                    <div class="project-card">
+                        <h3><a href="projects.html#web-dev">Web 开发</a></h3>
+                        <p>现代前端技术与静态网站构建</p>
+                    </div>
+                    <div class="project-card">
+                        <h3><a href="projects.html#research">研究项目</a></h3>
+                        <p>学术研究与技术探索</p>
+                    </div>
                 </div>
-            </section>
-
-            <!-- 文章阅读视图 -->
-            <section id="article-view" class="view">
-                <button id="back-to-list" class="back-btn">返回列表</button>
-                <article id="article-content" class="article-content"></article>
             </section>
         </main>
     </div>
-
-    <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+/* 项目页面样式 */
+@import url('index.css');
+
+.project-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.project-section h2 {
+    font-family: var(--font-title);
+    font-size: 24px;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-border);
+}
+
+.project-item {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.project-item h3 {
+    font-family: var(--font-title);
+    font-size: 20px;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.project-item .meta {
+    color: var(--color-text-muted);
+    font-size: 13px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.project-item .description {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.project-item .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-sm);
+}
+
+.tag {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-secondary);
+    padding: 2px var(--spacing-sm);
+    font-size: 12px;
+}
