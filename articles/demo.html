@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>示例文章 - 秋霖澍的空间</title>
+    <meta name="description" content="这是一篇使用语义化 HTML+CSS 类编写的示例文章，展示如何像写 Markdown 一样快速写作">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-section">
+                <h1 class="site-title">秋霖澍</h1>
+                <p class="bio">Shuu-rinshu</p>
+                <a href="https://github.com/AkirinShu">Github</a><br>
+                <a href="https://space.bilibili.com/93628520">Bilibili</a><br>
+                <p>QQ: 3541347237</p>
+                <p>Email: shuurinshu@qq.com</p>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html" class="nav-link">返回首页</a></li>
+                    <li><a href="../index.html#articles" class="nav-link">文章列表</a></li>
+                    <li><a href="../index.html#projects" class="nav-link">项目展示</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article>
+                <h1 class="art-title">示例文章：语义化 HTML 写作</h1>
+                
+                <h2 class="art-subtitle">无需 Markdown 转换，直接编写 HTML</h2>
+                
+                <p class="art-text">欢迎来到示例文章！这篇文章展示了如何使用预定义的 CSS 类来快速编写格式优美的 HTML 文章。</p>
+                
+                <p class="art-text">传统的 HTML 写作需要记忆大量样式，而 Markdown 虽然简洁但需要转换步骤。我们的方案结合了两者的优点：</p>
+                
+                <ul class="art-list">
+                    <li>保持 HTML 的原生结构，有利于 SEO 优化</li>
+                    <li>使用简洁的类名，写作体验接近 Markdown</li>
+                    <li>无需构建工具，保存即可预览</li>
+                    <li>每篇文章都是独立 HTML 文件，可被搜索引擎直接抓取</li>
+                </ul>
+                
+                <h2 class="art-subtitle">代码示例</h2>
+                
+                <p class="art-text">在技术文章中，代码展示是必不可少的。你可以使用行内代码 <code class="art-code">console.log('Hello')</code> 或者代码块：</p>
+                
+                <pre class="art-code-block"><code>// JavaScript 示例
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+console.log(greet('World'));</code></pre>
+                
+                <blockquote class="art-quote">
+                    提示：复制 template.html 文件，修改标题和内容，然后在 data/articles.json 中添加记录即可完成新文章发布。
+                </blockquote>
+                
+                <h2 class="art-subtitle">表格展示</h2>
+                
+                <p class="art-text">数据表格也是常用的内容形式：</p>
+                
+                <table class="art-table">
+                    <thead>
+                        <tr>
+                            <th>特性</th>
+                            <th>传统 HTML</th>
+                            <th>Markdown</th>
+                            <th>本方案</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SEO 友好</td>
+                            <td>是</td>
+                            <td>否（需转换）</td>
+                            <td>是</td>
+                        </tr>
+                        <tr>
+                            <td>写作速度</td>
+                            <td>慢</td>
+                            <td>快</td>
+                            <td>快</td>
+                        </tr>
+                        <tr>
+                            <td>无需构建</td>
+                            <td>是</td>
+                            <td>否</td>
+                            <td>是</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2 class="art-subtitle">总结</h2>
+                
+                <p class="art-text">通过这套语义化的 CSS 类系统，你可以专注于内容创作，而不必担心样式问题。每篇文章都是独立的 HTML 文件，可以直接被搜索引擎索引，实现最佳的 SEO 效果。</p>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
