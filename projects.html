@@ -33,10 +33,27 @@
         <main class="content">
             <h2 class="section-title">项目分类</h2>
             
+            <!-- 一级分类导航 -->
+            <div class="category-nav">
+                <a href="#web-dev" class="category-btn active">Web 开发</a>
+                <a href="#research" class="category-btn">研究项目</a>
+                <a href="#tools" class="category-btn">工具库</a>
+            </div>
+            
             <section id="web-dev" class="project-section">
-                <h3>Web 开发</h3>
+                <h3 class="category-title">Web 开发</h3>
+                <p class="category-description">现代前端技术与静态网站构建</p>
                 
-                <div class="project-item">
+                <!-- 二级标签筛选 -->
+                <div class="tag-filter">
+                    <span class="filter-label">筛选:</span>
+                    <button class="tag-btn active" data-tag="all">全部</button>
+                    <button class="tag-btn" data-tag="html">HTML</button>
+                    <button class="tag-btn" data-tag="css">CSS</button>
+                    <button class="tag-btn" data-tag="javascript">JavaScript</button>
+                </div>
+                
+                <div class="project-item" data-tags="html css javascript seo">
                     <h3>静态博客系统</h3>
                     <p class="meta">技术栈：HTML / CSS / JavaScript</p>
                     <p class="description">
@@ -51,7 +68,7 @@
                     </div>
                 </div>
                 
-                <div class="project-item">
+                <div class="project-item" data-tags="typescript nodejs npm">
                     <h3>前端工具库</h3>
                     <p class="meta">技术栈：TypeScript / Node.js</p>
                     <p class="description">
@@ -67,9 +84,17 @@
             </section>
             
             <section id="research" class="project-section">
-                <h3>研究项目</h3>
+                <h3 class="category-title">研究项目</h3>
+                <p class="category-description">学术研究与技术探索</p>
                 
-                <div class="project-item">
+                <div class="tag-filter">
+                    <span class="filter-label">筛选:</span>
+                    <button class="tag-btn active" data-tag="all">全部</button>
+                    <button class="tag-btn" data-tag="ml">机器学习</button>
+                    <button class="tag-btn" data-tag="python">Python</button>
+                </div>
+                
+                <div class="project-item" data-tags="ml python research">
                     <h3>机器学习应用研究</h3>
                     <p class="meta">周期：2025 - 至今</p>
                     <p class="description">
@@ -80,6 +105,32 @@
                         <span class="tag">Machine Learning</span>
                         <span class="tag">Python</span>
                         <span class="tag">Research</span>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="tools" class="project-section">
+                <h3 class="category-title">工具库</h3>
+                <p class="category-description">开发者工具与效率提升</p>
+                
+                <div class="tag-filter">
+                    <span class="filter-label">筛选:</span>
+                    <button class="tag-btn active" data-tag="all">全部</button>
+                    <button class="tag-btn" data-tag="cli">CLI</button>
+                    <button class="tag-btn" data-tag="vscode">VSCode</button>
+                </div>
+                
+                <div class="project-item" data-tags="cli rust">
+                    <h3>命令行工具集</h3>
+                    <p class="meta">技术栈：Rust</p>
+                    <p class="description">
+                        一系列实用的命令行工具，帮助开发者提高日常工作效率，
+                        包括文件处理、代码生成、自动化脚本等功能。
+                    </p>
+                    <div class="tags">
+                        <span class="tag">CLI</span>
+                        <span class="tag">Rust</span>
+                        <span class="tag">Terminal</span>
                     </div>
                 </div>
             </section>
