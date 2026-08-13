@@ -310,7 +310,7 @@ body {
 }
 
 /* 语义化写作样式类 (art-*) - 让写 HTML 像写 Markdown 一样简单 */
-.art-title {
+/* .art-title {
     font-family: var(--font-title);
     font-size: 32px;
     color: var(--color-primary);
@@ -325,7 +325,6 @@ body {
 }
 
 .art-text {
-    /* margin-bottom: var(--spacing-md); */
     line-height: 1.8;
 }
 
@@ -366,7 +365,7 @@ body {
     margin-bottom: var(--spacing-xs);
 }
 
-/* 图片样式增强 */
+/* 图片样式增强 
 .art-image {
     max-width: 100%;
     height: auto;
@@ -376,14 +375,14 @@ body {
     display: block;
 }
 
-/* 图片居中 */
+/* 图片居中 
 .art-image-center {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* 图片带标题包装器 */
+/* 图片带标题包装器 
 .art-image-wrapper {
     margin: var(--spacing-md) 0;
 }
@@ -395,7 +394,7 @@ body {
     margin-top: var(--spacing-sm);
 }
 
-/* 文章中的 img 标签样式 */
+/* 文章中的 img 标签样式 
 .article-content img {
     max-width: 100%;
     height: auto;
@@ -419,7 +418,7 @@ body {
 
 .art-table th {
     background-color: var(--color-bg-secondary);
-}
+} */
 
 /* 关于栏目样式 */
 .about-section {
