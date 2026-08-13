@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="秋霖澍的项目展示 - Web 开发、研究项目与技术探索">
-    <title>项目展示 - 秋霖澍的空间</title>
-    <link rel="stylesheet" href="styles/projects.css">
+    <meta name="description" content="秋霖澍的个人空间">
+    <title>秋霖澍的空间</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <div class="container">
-        <!-- 左侧边栏 -->
+
         <aside class="sidebar">
             <div class="profile-section">
                 <h1 class="site-title">秋霖澍</h1>
@@ -19,122 +20,459 @@
                 <p>QQ: 3541347237</p>
                 <p>Email: shuurinshu@qq.com</p>
             </div>
-            
+
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html" class="nav-link">首页</a></li>
-                    <li><a href="articles/demo.html" class="nav-link">示例文章</a></li>
-                    <li><a href="projects.html" class="nav-link active">项目</a></li>
+                    <li><a href="content.html" class="nav-link">内容</a></li>
+                    <!-- <li><a href="projects.html" class="nav-link active">项目</a></li> -->
                 </ul>
             </nav>
+            
         </aside>
 
-        <!-- 右侧内容区 -->
+
         <main class="content">
-            <h2 class="section-title">项目分类</h2>
-            
-            <!-- 一级分类导航 -->
-            <div class="category-nav">
-                <a href="#web-dev" class="category-btn active">Web 开发</a>
-                <a href="#research" class="category-btn">研究项目</a>
-                <a href="#tools" class="category-btn">工具库</a>
-            </div>
-            
-            <section id="web-dev" class="project-section">
-                <h3 class="category-title">Web 开发</h3>
-                <p class="category-description">现代前端技术与静态网站构建</p>
-                
-                <!-- 二级标签筛选 -->
-                <div class="tag-filter">
-                    <span class="filter-label">筛选:</span>
-                    <button class="tag-btn active" data-tag="all">全部</button>
-                    <button class="tag-btn" data-tag="html">HTML</button>
-                    <button class="tag-btn" data-tag="css">CSS</button>
-                    <button class="tag-btn" data-tag="javascript">JavaScript</button>
-                </div>
-                
-                <div class="project-item" data-tags="html css javascript seo">
-                    <h3>静态博客系统</h3>
-                    <p class="meta">技术栈：HTML / CSS / JavaScript</p>
-                    <p class="description">
-                        一个完全静态的个人博客系统，采用语义化 HTML 写作方式，无需 Markdown 转换，
-                        每篇文章都是独立的 HTML 文件，具有优秀的 SEO 表现。支持项目分类展示和文章管理。
-                    </p>
-                    <div class="tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">SEO</span>
-                    </div>
-                </div>
-                
-                <div class="project-item" data-tags="typescript nodejs npm">
-                    <h3>前端工具库</h3>
-                    <p class="meta">技术栈：TypeScript / Node.js</p>
-                    <p class="description">
-                        一系列提高前端开发效率的工具函数和组件库，包含常用数据处理、DOM 操作、
-                        动画效果等实用功能。
-                    </p>
-                    <div class="tags">
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">NPM</span>
-                    </div>
-                </div>
+
+            <section>
+
+                <p class="article-meta">
+                    PROJECTS / ARCHIVE
+                </p>
+
+                <h2 class="art-title">
+                    项目
+                </h2>
+
+                <p class="art-text">
+                    这里记录我正在进行或已经完成的项目。
+                    项目并不是文章的分类，而是一个拥有目标、过程、结果与历史的独立对象。
+                </p>
+
             </section>
-            
-            <section id="research" class="project-section">
-                <h3 class="category-title">研究项目</h3>
-                <p class="category-description">学术研究与技术探索</p>
-                
-                <div class="tag-filter">
-                    <span class="filter-label">筛选:</span>
-                    <button class="tag-btn active" data-tag="all">全部</button>
-                    <button class="tag-btn" data-tag="ml">机器学习</button>
-                    <button class="tag-btn" data-tag="python">Python</button>
+
+
+            <!-- 项目列表 -->
+
+            <section>
+
+                <h2 class="section-title">
+                    进行中
+                </h2>
+
+
+                <div class="project-list">
+
+
+                    <article class="project-card project-card-large"
+                             id="jxth-community">
+
+                        <div class="project-card-header">
+
+                            <span class="project-status status-active">
+                                开发中
+                            </span>
+
+                            <span class="article-meta">
+                                2026 — NOW
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            江西东方社群网
+                        </h3>
+
+
+                        <p class="description">
+                            一个面向江西地区东方Project爱好者的社群平台。
+                            目标不是制作一个普通的内容网站，而是建立一个能够长期记录本地活动、
+                            创作者、作品与社群历史的公共空间。
+                        </p>
+
+
+                        <div class="project-info">
+
+                            <div>
+                                <span>类型</span>
+                                <strong>Web / 社区</strong>
+                            </div>
+
+                            <div>
+                                <span>开始</span>
+                                <strong>2026-08</strong>
+                            </div>
+
+                            <div>
+                                <span>状态</span>
+                                <strong>开发中</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="tags">
+
+                            <span class="tag">Web</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">社区</span>
+
+                        </div>
+
+
+                        <p class="project-link">
+                            <a href="#jxth-community-detail">
+                                查看项目档案 →
+                            </a>
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-card project-card-large"
+                             id="jiangxi-folklore">
+
+                        <div class="project-card-header">
+
+                            <span class="project-status status-research">
+                                研究中
+                            </span>
+
+                            <span class="article-meta">
+                                2026 — NOW
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            江西地方文化资料整理
+                        </h3>
+
+
+                        <p class="description">
+                            长期整理江西地方民俗、文化与互联网资料。
+                            重点不是一次性完成一篇研究，而是建立一个可以持续积累的个人资料库。
+                        </p>
+
+
+                        <div class="project-info">
+
+                            <div>
+                                <span>类型</span>
+                                <strong>研究 / 资料整理</strong>
+                            </div>
+
+                            <div>
+                                <span>开始</span>
+                                <strong>2026</strong>
+                            </div>
+
+                            <div>
+                                <span>状态</span>
+                                <strong>资料收集</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="tags">
+
+                            <span class="tag">研究</span>
+                            <span class="tag">江西</span>
+                            <span class="tag">民俗</span>
+
+                        </div>
+
+
+                        <p class="project-link">
+                            <a href="#jiangxi-folklore-detail">
+                                查看项目档案 →
+                            </a>
+                        </p>
+
+                    </article>
+
                 </div>
-                
-                <div class="project-item" data-tags="ml python research">
-                    <h3>机器学习应用研究</h3>
-                    <p class="meta">周期：2025 - 至今</p>
-                    <p class="description">
-                        探索机器学习在实际场景中的应用，包括自然语言处理、计算机视觉等领域的
-                        算法优化与工程实践。
-                    </p>
-                    <div class="tags">
-                        <span class="tag">Machine Learning</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">Research</span>
-                    </div>
-                </div>
+
             </section>
-            
-            <section id="tools" class="project-section">
-                <h3 class="category-title">工具库</h3>
-                <p class="category-description">开发者工具与效率提升</p>
-                
-                <div class="tag-filter">
-                    <span class="filter-label">筛选:</span>
-                    <button class="tag-btn active" data-tag="all">全部</button>
-                    <button class="tag-btn" data-tag="cli">CLI</button>
-                    <button class="tag-btn" data-tag="vscode">VSCode</button>
+
+
+            <!-- 项目档案 -->
+
+            <section>
+
+                <h2 class="section-title">
+                    项目档案
+                </h2>
+
+
+                <div class="project-detail">
+
+
+                    <!-- 江西东方社群网 -->
+
+                    <article id="jxth-community-detail"
+                             class="project-dossier">
+
+                        <p class="article-meta">
+                            PROJECT / JXTH-COMMUNITY
+                        </p>
+
+                        <h1 class="art-title">
+                            江西东方社群网
+                        </h1>
+
+
+                        <p class="art-text">
+                            一个面向江西地区东方Project爱好者的社群平台。
+                        </p>
+
+
+                        <h3 class="art-subtitle">
+                            为什么做？
+                        </h3>
+
+                        <p class="art-text">
+                            江西地区存在一定规模的东方Project同人活动与爱好者群体，
+                            但相关信息往往分散在QQ群、社交媒体、活动页面以及个人创作者空间中。
+                        </p>
+
+                        <p class="art-text">
+                            因此，希望建立一个长期存在的公共空间，
+                            将活动、创作者、作品以及社群历史逐渐连接起来。
+                        </p>
+
+
+                        <h3 class="art-subtitle">
+                            项目目标
+                        </h3>
+
+                        <ul class="art-list">
+
+                            <li>
+                                建立江西东方Project社群的信息入口
+                            </li>
+
+                            <li>
+                                记录江西地区东方同人活动
+                            </li>
+
+                            <li>
+                                为本地创作者提供作品展示空间
+                            </li>
+
+                            <li>
+                                保存江西东方同人社群的发展历史
+                            </li>
+
+                        </ul>
+
+
+                        <h3 class="art-subtitle">
+                            项目结构
+                        </h3>
+
+                        <div class="project-list">
+
+                            <div class="project-card">
+                                <h3>社群</h3>
+                                <p class="description">
+                                    用户、创作者与地区社群之间的连接。
+                                </p>
+                            </div>
+
+                            <div class="project-card">
+                                <h3>活动</h3>
+                                <p class="description">
+                                    江西地区东方Project相关活动的记录。
+                                </p>
+                            </div>
+
+                            <div class="project-card">
+                                <h3>作品</h3>
+                                <p class="description">
+                                    绘画、音乐、文学以及其他同人作品。
+                                </p>
+                            </div>
+
+                            <div class="project-card">
+                                <h3>资料</h3>
+                                <p class="description">
+                                    整理地区同人文化的历史资料。
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <h3 class="art-subtitle">
+                            项目路线
+                        </h3>
+
+                        <div class="project-timeline">
+
+                            <div class="timeline-item">
+                                <span>01</span>
+
+                                <div>
+                                    <strong>构想</strong>
+                                    <p>
+                                        确定项目定位与希望解决的问题。
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="timeline-item">
+                                <span>02</span>
+
+                                <div>
+                                    <strong>设计</strong>
+                                    <p>
+                                        设计信息架构、视觉系统与内容组织方式。
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="timeline-item">
+                                <span>03</span>
+
+                                <div>
+                                    <strong>开发</strong>
+                                    <p>
+                                        完成网站基础功能与内容系统。
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="timeline-item">
+                                <span>04</span>
+
+                                <div>
+                                    <strong>上线</strong>
+                                    <p>
+                                        向江西地区东方Project爱好者开放。
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="timeline-item">
+                                <span>05</span>
+
+                                <div>
+                                    <strong>长期维护</strong>
+                                    <p>
+                                        持续记录活动、作品、人物与社群历史。
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <h3 class="art-subtitle">
+                            相关记录
+                        </h3>
+
+                        <div class="article-list">
+
+                            <article class="article-card">
+
+                                <h3>
+                                    <a href="articles/demo2.html">
+                                        为什么我要做江西东方社群平台
+                                    </a>
+                                </h3>
+
+                                <p class="meta">
+                                    2026-08-13
+                                </p>
+
+                                <p class="excerpt">
+                                    项目的最初构想与动机。
+                                </p>
+
+                            </article>
+
+
+                            <article class="article-card">
+
+                                <h3>
+                                    <a href="articles/demo2.html">
+                                        江西东方社群网的网站架构设计
+                                    </a>
+                                </h3>
+
+                                <p class="meta">
+                                    2026-08-10
+                                </p>
+
+                                <p class="excerpt">
+                                    网站的信息架构与技术实现。
+                                </p>
+
+                            </article>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 江西地方文化 -->
+
+                    <article id="jiangxi-folklore-detail"
+                             class="project-dossier">
+
+                        <p class="article-meta">
+                            PROJECT / JX-FOLKLORE
+                        </p>
+
+                        <h1 class="art-title">
+                            江西地方文化资料整理
+                        </h1>
+
+                        <p class="art-text">
+                            一个长期进行的资料整理项目。
+                        </p>
+
+                        <h3 class="art-subtitle">
+                            为什么做？
+                        </h3>
+
+                        <p class="art-text">
+                            互联网上关于地方文化的资料经常分散在新闻、
+                            地方志、个人文章、论坛与短视频平台中。
+                            这个项目希望逐步建立一个更容易阅读和检索的个人资料库。
+                        </p>
+
+
+                        <h3 class="art-subtitle">
+                            当前阶段
+                        </h3>
+
+                        <ul class="art-list">
+
+                            <li>资料收集</li>
+                            <li>来源整理</li>
+                            <li>主题分类</li>
+                            <li>后续研究</li>
+
+                        </ul>
+
+                    </article>
+
                 </div>
-                
-                <div class="project-item" data-tags="cli rust">
-                    <h3>命令行工具集</h3>
-                    <p class="meta">技术栈：Rust</p>
-                    <p class="description">
-                        一系列实用的命令行工具，帮助开发者提高日常工作效率，
-                        包括文件处理、代码生成、自动化脚本等功能。
-                    </p>
-                    <div class="tags">
-                        <span class="tag">CLI</span>
-                        <span class="tag">Rust</span>
-                        <span class="tag">Terminal</span>
-                    </div>
-                </div>
+
             </section>
+
         </main>
+
     </div>
 </body>
 </html>

@@ -3,103 +3,639 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>示例文章 - 秋霖澍的空间</title>
-    <meta name="description" content="这是一篇使用语义化 HTML+CSS 类编写的示例文章，展示如何像写 Markdown 一样快速写作">
-    <link rel="stylesheet" href="../styles/index.css">
+    <meta name="description" content="秋霖澍的个人博客">
+    <title>秋霖澍的空间</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="css/pages.css">
 </head>
+
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <div class="profile-section">
-                <h1 class="site-title">秋霖澍</h1>
-                <p class="bio">Shuu-rinshu</p>
-                <a href="https://github.com/AkirinShu">Github</a><br>
-                <a href="https://space.bilibili.com/93628520">Bilibili</a><br>
-                <p>QQ: 3541347237</p>
-                <p>Email: shuurinshu@qq.com</p>
-            </div>
-            
-            <nav class="main-nav">
+    
+<div class="container">
+
+    <aside class="sidebar">
+        <div class="profile-section">
+            <h1 class="site-title">秋霖澍</h1>
+            <p class="bio">Shuu-rinshu</p>
+            <a href="https://github.com/AkirinShu">Github</a>
+            <a href="https://space.bilibili.com/93628520">Bilibili</a>
+            <p>QQ: 3541347237</p>
+            <p>Email: shuurinshu@qq.com</p>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html" class="nav-link active">首页</a></li>
+                <li><a href="../content.html" class="nav-link">内容</a></li>
+                <!-- <li><a href="projects.html" class="nav-link">项目</a></li> -->
+            </ul>
+        </nav>
+
+    </aside>
+
+    <!-- 右侧内容区 -->
+    <main class="content">
+        <article class="article-content">
+
+        <!-- =================================================
+                标题
+                ================================================= -->
+
+        <h1>彩蛋文章？？？一个 HTML 文章页面示例</h1>
+
+        <p>
+            这是一篇用于测试博客文章排版系统的示例文章。
+            本页面故意使用大量不同的
+            <strong>HTML 语义元素</strong>，
+            用来检查 <em>article-content</em> 的 CSS 是否能够覆盖常见文章内容。
+        </p>
+
+        <p>
+            文章发布日期：
+            <time datetime="2026-08-13">2026 年 8 月 13 日 18:00（UTC+8）</time>
+        </p>
+
+
+        <!-- =================================================
+                二级标题
+                ================================================= -->
+
+        <h2>一、为什么使用语义化 HTML</h2>
+
+        <p>
+            Markdown 很方便，但 HTML 本身就是一种非常完整的文档描述语言。
+            如果文章正文统一放在
+            <code>&lt;article class="article-content"&gt;</code>
+            中，那么正文内部就不需要大量额外的 class。
+        </p>
+
+        <p>
+            例如我们只需要写
+            <code>&lt;h2&gt;</code>、
+            <code>&lt;p&gt;</code>、
+            <code>&lt;ul&gt;</code>
+            等标签，CSS 就可以自动完成排版。
+        </p>
+
+
+        <!-- =================================================
+                三级、四级、五级、六级标题
+                ================================================= -->
+
+        <h3>1. 语义结构</h3>
+
+        <p>
+            HTML 标签不仅决定视觉效果，也表达文档结构。
+        </p>
+
+        <h4>1.1 标题层级</h4>
+
+        <p>
+            标题应该按照文档层级使用，而不是单纯为了改变字体大小。
+        </p>
+
+        <h5>1.1.1 更细的章节</h5>
+
+        <p>
+            这是第五级标题下面的正文。
+        </p>
+
+        <h6>附注：第六级标题</h6>
+
+        <p>
+            这是第六级标题下面的正文。
+        </p>
+
+
+        <!-- =================================================
+                强调、删除、高亮
+                ================================================= -->
+
+        <h2>二、文本强调</h2>
+
+        <p>
+            普通文本可以使用
+            <strong>strong 表示重要内容</strong>，
+            使用
+            <b>b 表示视觉上的加粗</b>。
+        </p>
+
+        <p>
+            同样可以使用
+            <em>em 表示语义上的强调</em>，
+            或者使用
+            <i>i 表示不同语气或术语</i>。
+        </p>
+
+        <p>
+            这是
+            <del>已经被删除的内容</del>，
+            这是
+            <s>不再适用的旧信息</s>。
+        </p>
+
+        <p>
+            这是
+            <mark>需要特别注意的内容</mark>。
+        </p>
+
+
+        <!-- =================================================
+                链接
+                ================================================= -->
+
+        <h2>三、链接</h2>
+
+        <p>
+            可以直接使用普通链接访问
+            <a href="https://example.com">示例网站</a>。
+        </p>
+
+        <p>
+            也可以链接到
+            <a href="#lists">本文后面的列表章节</a>。
+        </p>
+
+
+        <!-- =================================================
+                无序列表
+                ================================================= -->
+
+        <h2 id="lists">四、列表</h2>
+
+        <h3>无序列表</h3>
+
+        <ul>
+            <li>江西</li>
+            <li>南昌</li>
+            <li>景德镇</li>
+            <li>
+                赣州
+
                 <ul>
-                    <li><a href="../index.html" class="nav-link">返回首页</a></li>
-                    <li><a href="../index.html#articles" class="nav-link">文章列表</a></li>
-                    <li><a href="../index.html#projects" class="nav-link">项目展示</a></li>
-                </ul>
-            </nav>
-        </aside>
+                    <li>章贡区</li>
+                    <li>南康区</li>
+                    <li>
+                        其他地区
 
-        <main class="content">
-            <article>
-                <h1 class="art-title">示例文章：语义化 HTML 写作</h1>
-                
-                <h2 class="art-subtitle">无需 Markdown 转换，直接编写 HTML</h2>
-                
-                <p class="art-text">欢迎来到示例文章！这篇文章展示了如何使用预定义的 CSS 类来快速编写格式优美的 HTML 文章。</p>
-                
-                <p class="art-text">传统的 HTML 写作需要记忆大量样式，而 Markdown 虽然简洁但需要转换步骤。我们的方案结合了两者的优点：</p>
-                
-                <ul class="art-list">
-                    <li>保持 HTML 的原生结构，有利于 SEO 优化</li>
-                    <li>使用简洁的类名，写作体验接近 Markdown</li>
-                    <li>无需构建工具，保存即可预览</li>
-                    <li>每篇文章都是独立 HTML 文件，可被搜索引擎直接抓取</li>
-                </ul>
-                
-                <h2 class="art-subtitle">代码示例</h2>
-                
-                <p class="art-text">在技术文章中，代码展示是必不可少的。你可以使用行内代码 <code class="art-code">console.log('Hello')</code> 或者代码块：</p>
-                
-                <pre class="art-code-block"><code>// JavaScript 示例
-function greet(name) {
-    return `Hello, ${name}!`;
-}
+                        <ul>
+                            <li>地区 A</li>
+                            <li>地区 B</li>
+                        </ul>
 
-console.log(greet('World'));</code></pre>
-                
-                <blockquote class="art-quote">
-                    提示：复制 template.html 文件，修改标题和内容，然后在 data/articles.json 中添加记录即可完成新文章发布。
-                </blockquote>
-                
-                <h2 class="art-subtitle">表格展示</h2>
-                
-                <p class="art-text">数据表格也是常用的内容形式：</p>
-                
-                <table class="art-table">
-                    <thead>
-                        <tr>
-                            <th>特性</th>
-                            <th>传统 HTML</th>
-                            <th>Markdown</th>
-                            <th>本方案</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>SEO 友好</td>
-                            <td>是</td>
-                            <td>否（需转换）</td>
-                            <td>是</td>
-                        </tr>
-                        <tr>
-                            <td>写作速度</td>
-                            <td>慢</td>
-                            <td>快</td>
-                            <td>快</td>
-                        </tr>
-                        <tr>
-                            <td>无需构建</td>
-                            <td>是</td>
-                            <td>否</td>
-                            <td>是</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <h2 class="art-subtitle">总结</h2>
-                
-                <p class="art-text">通过这套语义化的 CSS 类系统，你可以专注于内容创作，而不必担心样式问题。每篇文章都是独立的 HTML 文件，可以直接被搜索引擎索引，实现最佳的 SEO 效果。</p>
-            </article>
-        </main>
-    </div>
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+
+
+        <!-- =================================================
+                有序列表
+                ================================================= -->
+
+        <h3>有序列表</h3>
+
+        <ol>
+            <li>确定研究对象</li>
+            <li>搜集资料</li>
+            <li>整理资料</li>
+            <li>分析资料</li>
+            <li>形成文章</li>
+        </ol>
+
+
+        <!-- =================================================
+                有序列表嵌套
+                ================================================= -->
+
+        <h3>嵌套的有序列表</h3>
+
+        <ol>
+            <li>
+                前期资料
+
+                <ol>
+                    <li>确定关键词</li>
+                    <li>检索资料</li>
+                </ol>
+
+            </li>
+
+            <li>
+                田野阶段
+
+                <ol>
+                    <li>访谈</li>
+                    <li>观察</li>
+                    <li>记录</li>
+                </ol>
+
+            </li>
+
+            <li>
+                后期资料整理
+            </li>
+        </ol>
+
+
+        <!-- =================================================
+                引用
+                ================================================= -->
+
+        <h2>五、引用</h2>
+
+        <blockquote>
+            <p>
+                文档的结构应该服务于内容，而不是让内容迁就视觉样式。
+            </p>
+
+            <p>
+                当 HTML 元素已经能够准确表达内容含义时，
+                通常没有必要再额外添加 class。
+            </p>
+        </blockquote>
+
+
+        <!-- =================================================
+                分割线
+                ================================================= -->
+
+        <hr>
+
+
+        <!-- =================================================
+                图片
+                ================================================= -->
+
+        <h2>六、图片与插图</h2>
+
+        <p>
+            图片可以直接使用 img 标签，并由 CSS 自动限制最大宽度。
+        </p>
+
+        <!-- 将 src 替换成真实图片地址即可 -->
+        <img
+            src="/images/example-landscape.jpg"
+            alt="江西某地的示例风景照片"
+        >
+
+
+        <!-- =================================================
+                Figure
+                ================================================= -->
+
+        <figure>
+
+            <img
+                src="/images/example-map.jpg"
+                alt="江西省地图示例"
+            >
+
+            <figcaption>
+                图 1：用于测试 figure 与 figcaption 排版的示例图片。
+            </figcaption>
+
+        </figure>
+
+
+        <!-- =================================================
+                代码
+                ================================================= -->
+
+        <h2>七、代码</h2>
+
+        <p>
+            行内代码可以直接使用
+            <code>const article = document.querySelector('article');</code>。
+        </p>
+
+        <p>
+            键盘快捷键可以使用
+            <kbd>Ctrl</kbd> +
+            <kbd>S</kbd>
+            保存文件。
+        </p>
+
+        <pre><code>const article = document.querySelector('.article-content');
+
+if (article) {
+console.log('Article loaded.');
+}</code></pre>
+
+
+        <!-- =================================================
+                表格
+                ================================================= -->
+
+        <h2>八、表格</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>年份</th>
+                    <th>项目</th>
+                    <th>状态</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>2024</td>
+                    <td>资料搜集</td>
+                    <td>完成</td>
+                </tr>
+
+                <tr>
+                    <td>2025</td>
+                    <td>资料整理</td>
+                    <td>进行中</td>
+                </tr>
+
+                <tr>
+                    <td>2026</td>
+                    <td>文章撰写</td>
+                    <td>进行中</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <!-- =================================================
+                Definition List
+                ================================================= -->
+
+        <h2>九、术语表</h2>
+
+        <dl>
+
+            <dt>HTML</dt>
+            <dd>
+                HyperText Markup Language，
+                用于描述网页文档结构的标记语言。
+            </dd>
+
+            <dt>CSS</dt>
+            <dd>
+                Cascading Style Sheets，
+                用于描述网页视觉表现的样式语言。
+            </dd>
+
+            <dt>SSG</dt>
+            <dd>
+                Static Site Generation，
+                即静态站点生成。
+            </dd>
+
+        </dl>
+
+
+        <!-- =================================================
+                Details / Summary
+                ================================================= -->
+
+        <h2>十、折叠内容</h2>
+
+        <details>
+
+            <summary>点击查看补充资料</summary>
+
+            <p>
+                这里是默认隐藏的补充内容。
+                details 元素不需要 JavaScript 就可以实现展开和折叠。
+            </p>
+
+            <p>
+                对于资料整理、脚注、技术细节等内容非常实用。
+            </p>
+
+        </details>
+
+
+        <!-- =================================================
+                Abbreviation
+                ================================================= -->
+
+        <h2>十一、缩写</h2>
+
+        <p>
+            本网站使用
+            <abbr title="HyperText Markup Language">HTML</abbr>
+            编写文章结构。
+        </p>
+
+        <p>
+            同时使用
+            <abbr title="Cascading Style Sheets">CSS</abbr>
+            负责文章排版。
+        </p>
+
+
+        <!-- =================================================
+                上标与下标
+                ================================================= -->
+
+        <h2>十二、数学与上下标</h2>
+
+        <p>
+            水的化学式可以写作 H<sub>2</sub>O。
+        </p>
+
+        <p>
+            爱因斯坦的质能方程可以写作 E = mc<sup>2</sup>。
+        </p>
+
+
+        <!-- =================================================
+                Address
+                ================================================= -->
+
+        <h2>十三、联系方式</h2>
+
+        <address>
+
+            作者：示例作者<br>
+
+            Email：
+            <a href="mailto:example@example.com">
+                example@example.com
+            </a><br>
+
+            网站：
+            <a href="https://example.com">
+                example.com
+            </a>
+
+        </address>
+
+
+        <!-- =================================================
+                Time
+                ================================================= -->
+
+        <h2>十四、时间</h2>
+
+        <p>
+            本文创建于
+            <time datetime="2026-08-13T17:00:00+08:00">
+                2026 年 8 月 13 日 17:00
+            </time>。
+        </p>
+
+        <p>
+            项目预计于
+            <time datetime="2026-09">
+                2026 年 9 月
+            </time>
+            进入下一阶段。
+        </p>
+
+
+        <!-- =================================================
+                Audio
+                ================================================= -->
+
+        <h2>十五、音频</h2>
+
+        <p>
+            下面是 audio 元素的示例。
+        </p>
+
+        <!-- 替换 src 为真实音频文件 -->
+        
+        <audio controls>
+            <source
+                src="/media/example.mp3"
+                type="audio/mpeg"
+            >
+            您的浏览器不支持 audio 元素。
+        </audio>
+        
+
+
+        <!-- =================================================
+                Video
+                ================================================= -->
+
+        <h2>十六、视频</h2>
+
+        
+        <video controls>
+            <source
+                src="/media/example.mp4"
+                type="video/mp4"
+            >
+            您的浏览器不支持 video 元素。
+        </video>
+        
+
+
+        <!-- =================================================
+                Iframe
+                ================================================= -->
+
+        <h2>十七、嵌入网页</h2>
+
+        
+        <iframe
+            src="https://example.com"
+            title="示例网页"
+            loading="lazy"
+        ></iframe>
+        
+
+
+        <!-- =================================================
+                Embed
+                ================================================= -->
+
+        <h2>十八、Embed</h2>
+
+        
+        <embed
+            src="/documents/example.pdf"
+            type="application/pdf"
+            width="100%"
+            height="600"
+        >
+        
+
+
+        <!-- =================================================
+                Object
+                ================================================= -->
+
+        <h2>十九、Object</h2>
+
+        
+        <object
+            data="/documents/example.pdf"
+            type="application/pdf"
+            width="100%"
+            height="600"
+        >
+            <p>
+                当前浏览器无法显示该 PDF 文件。
+            </p>
+        </object>
+        
+
+
+        <!-- =================================================
+                综合示例
+                ================================================= -->
+
+        <hr>
+
+        <h2>二十、综合示例</h2>
+
+        <p>
+            到这里，一篇普通文章已经可以覆盖绝大多数内容类型。
+            例如我们可以先提出一个问题：
+        </p>
+
+        <blockquote>
+
+            <p>
+                为什么一个静态博客仍然需要复杂的前端系统？
+            </p>
+
+        </blockquote>
+
+        <p>
+            答案并不一定复杂。
+            如果文章本身就是结构良好的 HTML，
+            那么网站只需要负责提供统一的布局与样式即可。
+        </p>
+
+        <p>
+            因此，本系统的核心原则可以概括为：
+            <strong>内容负责语义，CSS 负责表现。</strong>
+        </p>
+
+
+        <!-- =================================================
+                Article End
+                ================================================= -->
+
+        <hr>
+
+        <p>
+            <small>
+                本页面是文章排版系统测试页面。
+            </small>
+        </p>
+
+        </article>
+    
+    </main>
+
+</div>
+
 </body>
+
 </html>

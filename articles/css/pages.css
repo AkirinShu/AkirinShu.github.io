@@ -1,0 +1,769 @@
+/* =========================================================
+   Article Content
+   ---------------------------------------------------------
+   Usage:
+   <article class="article-content">
+       <h1>文章标题</h1>
+       <p>正文……</p>
+       <h2>章节标题</h2>
+       <p>正文……</p>
+   </article>
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. Base
+   --------------------------------------------------------- */
+
+.article-content {
+    width: 100%;
+    max-width: 820px;
+    /* margin: 0 auto; */
+    padding: 2rem 1.5rem 4rem;
+
+    box-sizing: border-box;
+
+    color: var(--color-text, #333);
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.85;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+
+/* ---------------------------------------------------------
+   2. Headings
+   --------------------------------------------------------- */
+
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
+    margin-top: 2.5em;
+    /* margin-bottom: 0.8em; */
+
+    color: var(--color-heading, #222);
+
+    font-weight: 700;
+    line-height: 1.35;
+
+    overflow-wrap: break-word;
+}
+
+.article-content h1 {
+    margin-top: 0;
+    /* margin-bottom: 1.2em; */
+
+    font-size: 2rem;
+}
+
+.article-content h2 {
+    padding-bottom: 0.35em;
+
+    font-size: 1.6rem;
+
+    border-bottom: 1px solid var(--color-border, #ddd);
+}
+
+.article-content h3 {
+    font-size: 1.35rem;
+}
+
+.article-content h4 {
+    font-size: 1.15rem;
+}
+
+.article-content h5 {
+    font-size: 1rem;
+}
+
+.article-content h6 {
+    font-size: 0.95rem;
+
+    color: var(--color-text-secondary, #666);
+}
+
+
+/* ---------------------------------------------------------
+   3. Paragraphs
+   --------------------------------------------------------- */
+
+.article-content p {
+    margin: 1.2em 0;
+}
+
+
+/* ---------------------------------------------------------
+   4. Links
+   --------------------------------------------------------- */
+
+.article-content a {
+    color: var(--color-link, #356aa0);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+
+    transition:
+        color 0.15s ease,
+        background-color 0.15s ease;
+}
+
+.article-content a:hover {
+    color: var(--color-link-hover, #1d4f7a);
+}
+
+.article-content a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}
+
+
+/* ---------------------------------------------------------
+   5. Strong / Emphasis
+   --------------------------------------------------------- */
+
+.article-content strong,
+.article-content b {
+    font-weight: 700;
+}
+
+.article-content em,
+.article-content i {
+    font-style: italic;
+}
+
+.article-content del,
+.article-content s {
+    text-decoration: line-through;
+}
+
+.article-content mark {
+    padding: 0.05em 0.2em;
+
+    color: inherit;
+    background: var(--color-highlight, #fff1a8);
+}
+
+
+/* ---------------------------------------------------------
+   6. Lists
+   --------------------------------------------------------- */
+
+.article-content ul,
+.article-content ol {
+    margin: 1.2em 0;
+    padding-left: 2em;
+}
+
+.article-content li {
+    margin: 0.35em 0;
+    padding-left: 0.2em;
+}
+
+.article-content ul {
+    list-style-type: disc;
+}
+
+.article-content ul ul {
+    list-style-type: circle;
+}
+
+.article-content ul ul ul {
+    list-style-type: square;
+}
+
+.article-content ol {
+    list-style-type: decimal;
+}
+
+.article-content ol ol {
+    list-style-type: lower-alpha;
+}
+
+.article-content ol ol ol {
+    list-style-type: lower-roman;
+}
+
+
+/* ---------------------------------------------------------
+   7. Blockquote
+   --------------------------------------------------------- */
+
+.article-content blockquote {
+    margin: 1.8em 0;
+    padding: 0.8em 1.4em;
+
+    color: var(--color-text-secondary, #555);
+
+    border-left: 4px solid var(--color-border-strong, #aaa);
+    background: var(--color-surface-muted, #f7f7f7);
+}
+
+.article-content blockquote p {
+    margin: 0.6em 0;
+}
+
+.article-content blockquote > :first-child {
+    margin-top: 0;
+}
+
+.article-content blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   8. Horizontal Rule
+   --------------------------------------------------------- */
+
+.article-content hr {
+    height: 1px;
+    margin: 2.5rem 0;
+
+    border: 0;
+    border-top: 1px solid var(--color-border, #ddd);
+}
+
+
+/* ---------------------------------------------------------
+   9. Images
+   --------------------------------------------------------- */
+
+.article-content img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+
+    margin: 1.8rem auto;
+
+    border-radius: var(--article-image-radius, 4px);
+}
+
+.article-content a img {
+    transition:
+        opacity 0.15s ease,
+        transform 0.15s ease;
+}
+
+.article-content a:hover img {
+    opacity: 0.9;
+}
+
+
+/* ---------------------------------------------------------
+   10. Figure / Figcaption
+   --------------------------------------------------------- */
+
+.article-content figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.article-content figure img {
+    margin: 0 auto;
+}
+
+.article-content figcaption {
+    margin-top: 0.7rem;
+
+    color: var(--color-text-secondary, #777);
+
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+
+/* ---------------------------------------------------------
+   11. Code
+   --------------------------------------------------------- */
+
+.article-content code {
+    padding: 0.15em 0.4em;
+
+    font-family:
+        "Cascadia Code",
+        "Fira Code",
+        "JetBrains Mono",
+        Consolas,
+        "Courier New",
+        monospace;
+
+    font-size: 0.9em;
+    line-height: 1.5;
+
+    color: var(--color-code, #7a3e00);
+    background: var(--color-code-bg, #f3f3f3);
+
+    border: 1px solid var(--color-border, #ddd);
+    border-radius: 3px;
+}
+
+
+/* ---------------------------------------------------------
+   12. Code Block
+   --------------------------------------------------------- */
+
+.article-content pre {
+    margin: 1.8rem 0;
+    padding: 1rem 1.2rem;
+
+    overflow-x: auto;
+
+    font-family:
+        "Cascadia Code",
+        "Fira Code",
+        "JetBrains Mono",
+        Consolas,
+        "Courier New",
+        monospace;
+
+    font-size: 0.9rem;
+    line-height: 1.65;
+
+    color: var(--color-code-block, #eee);
+    background: var(--color-code-block-bg, #242424);
+
+    border: 1px solid var(--color-border, #333);
+    border-radius: 4px;
+
+    tab-size: 4;
+}
+
+.article-content pre code {
+    padding: 0;
+
+    color: inherit;
+    background: transparent;
+
+    border: 0;
+    border-radius: 0;
+
+    font-size: inherit;
+}
+
+
+/* ---------------------------------------------------------
+   13. Tables
+   --------------------------------------------------------- */
+
+.article-content table {
+    width: 100%;
+    margin: 2rem 0;
+
+    border-collapse: collapse;
+
+    font-size: 0.95rem;
+}
+
+.article-content th,
+.article-content td {
+    padding: 0.7em 0.9em;
+
+    text-align: left;
+    vertical-align: top;
+
+    border: 1px solid var(--color-border, #ccc);
+}
+
+.article-content th {
+    font-weight: 700;
+
+    color: var(--color-heading, #222);
+    background: var(--color-surface-muted, #f5f5f5);
+}
+
+.article-content tbody tr:nth-child(even) {
+    background: var(--color-surface-subtle, #fafafa);
+}
+
+
+/* ---------------------------------------------------------
+   14. Definition Lists
+   --------------------------------------------------------- */
+
+.article-content dl {
+    margin: 1.5rem 0;
+}
+
+.article-content dt {
+    margin-top: 1rem;
+
+    font-weight: 700;
+}
+
+.article-content dd {
+    margin: 0.3rem 0 0 2em;
+}
+
+
+/* ---------------------------------------------------------
+   15. Details / Summary
+   --------------------------------------------------------- */
+
+.article-content details {
+    margin: 1.5rem 0;
+    padding: 0.8rem 1rem;
+
+    border: 1px solid var(--color-border, #ddd);
+    background: var(--color-surface-muted, #f8f8f8);
+}
+
+.article-content summary {
+    cursor: pointer;
+
+    font-weight: 700;
+}
+
+.article-content details > :not(summary) {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+
+/* ---------------------------------------------------------
+   16. Keyboard / System Input
+   --------------------------------------------------------- */
+
+.article-content kbd {
+    display: inline-block;
+
+    padding: 0.1em 0.4em;
+
+    font-family:
+        "Cascadia Code",
+        Consolas,
+        monospace;
+
+    font-size: 0.85em;
+    line-height: 1.4;
+
+    color: var(--color-text, #333);
+    background: var(--color-surface-muted, #eee);
+
+    border: 1px solid var(--color-border, #bbb);
+    border-bottom-width: 2px;
+    border-radius: 3px;
+}
+
+
+/* ---------------------------------------------------------
+   17. Abbreviation
+   --------------------------------------------------------- */
+
+.article-content abbr[title] {
+    cursor: help;
+
+    text-decoration: underline dotted;
+    text-underline-offset: 0.15em;
+}
+
+
+/* ---------------------------------------------------------
+   18. Sup / Sub
+   --------------------------------------------------------- */
+
+.article-content sup,
+.article-content sub {
+    font-size: 0.75em;
+    line-height: 0;
+}
+
+.article-content sup {
+    vertical-align: super;
+}
+
+.article-content sub {
+    vertical-align: sub;
+}
+
+
+/* ---------------------------------------------------------
+   19. Address
+   --------------------------------------------------------- */
+
+.article-content address {
+    margin: 1.5rem 0;
+
+    font-style: normal;
+    line-height: 1.7;
+
+    color: var(--color-text-secondary, #666);
+}
+
+
+/* ---------------------------------------------------------
+   20. Time
+   --------------------------------------------------------- */
+
+.article-content time {
+    color: var(--color-text-secondary, #666);
+}
+
+
+/* ---------------------------------------------------------
+   21. Video / Audio / Iframe
+   --------------------------------------------------------- */
+
+.article-content video,
+.article-content audio {
+    display: block;
+
+    max-width: 100%;
+
+    margin: 1.8rem auto;
+}
+
+.article-content iframe {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    margin: 2rem auto;
+
+    border: 0;
+}
+
+
+/* ---------------------------------------------------------
+   22. Embedded Content
+   --------------------------------------------------------- */
+
+.article-content embed,
+.article-content object {
+    display: block;
+
+    max-width: 100%;
+
+    margin: 2rem auto;
+}
+
+
+/* ---------------------------------------------------------
+   23. Selection
+   --------------------------------------------------------- */
+
+.article-content ::selection {
+    color: var(--color-selection-text, #fff);
+    background: var(--color-selection, #555);
+}
+
+
+/* ---------------------------------------------------------
+   24. First / Last Child
+   --------------------------------------------------------- */
+
+.article-content > :first-child {
+    margin-top: 0;
+}
+
+.article-content > :last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   25. Nested Element Spacing
+   --------------------------------------------------------- */
+
+.article-content li > ul,
+.article-content li > ol {
+    margin-top: 0.35em;
+    margin-bottom: 0.35em;
+}
+
+.article-content blockquote > blockquote {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* ---------------------------------------------------------
+   26. Overflow Protection
+   --------------------------------------------------------- */
+
+.article-content table {
+    display: block;
+    overflow-x: auto;
+}
+
+.article-content pre {
+    white-space: pre;
+}
+
+.article-content img,
+.article-content video,
+.article-content iframe,
+.article-content embed,
+.article-content object {
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   27. Mobile
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .article-content {
+        padding: 1.5rem 1rem 3rem;
+
+        font-size: 0.98rem;
+        line-height: 1.8;
+    }
+
+    .article-content h1 {
+        font-size: 1.7rem;
+    }
+
+    .article-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .article-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .article-content h4 {
+        font-size: 1.05rem;
+    }
+
+    .article-content ul,
+    .article-content ol {
+        padding-left: 1.6em;
+    }
+
+    .article-content blockquote {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 1rem;
+    }
+
+    .article-content pre {
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+
+        padding: 0.8rem;
+
+        border-radius: 2px;
+    }
+
+    .article-content table {
+        font-size: 0.9rem;
+    }
+
+    .article-content th,
+    .article-content td {
+        padding: 0.55em 0.7em;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   28. Small Screens
+   --------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+    .article-content {
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+
+        font-size: 0.95rem;
+    }
+
+    .article-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .article-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .article-content h3 {
+        font-size: 1.15rem;
+    }
+
+    .article-content blockquote {
+        padding-left: 0.8rem;
+    }
+
+    .article-content figure {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   29. Reduced Motion
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .article-content a,
+    .article-content a img {
+        transition: none;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   30. Print
+   --------------------------------------------------------- */
+
+@media print {
+
+    .article-content {
+        max-width: none;
+        padding: 0;
+
+        color: #000;
+        font-size: 11pt;
+        line-height: 1.7;
+    }
+
+    .article-content a {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    .article-content a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+
+    .article-content pre {
+        color: #000;
+        background: #fff;
+
+        border: 1px solid #999;
+
+        white-space: pre-wrap;
+    }
+
+    .article-content img {
+        max-width: 100%;
+
+        page-break-inside: avoid;
+    }
+
+    .article-content figure,
+    .article-content blockquote,
+    .article-content pre,
+    .article-content table {
+        page-break-inside: avoid;
+    }
+
+    .article-content h1,
+    .article-content h2,
+    .article-content h3 {
+        page-break-after: avoid;
+    }
+}

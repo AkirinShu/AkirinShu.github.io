@@ -3,82 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="秋霖澍的个人博客 - 分享技术文章与项目成果">
+    <meta name="description" content="秋霖澍的个人博客">
     <title>秋霖澍的空间</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <div class="container">
-        <!-- 左侧边栏 -->
-        <aside class="sidebar">
-            <div class="profile-section">
-                <h1 class="site-title">秋霖澍</h1>
-                <p class="bio">Shuu-rinshu</p>
-                <a href="https://github.com/AkirinShu">Github</a>
-                <a href="https://space.bilibili.com/93628520">Bilibili</a>
-                <p>QQ: 3541347237</p>
-                <p>Email: shuurinshu@qq.com</p>
+    
+<div class="container">
+
+    <aside class="sidebar">
+        <div class="profile-section">
+            <h1 class="site-title">秋霖澍</h1>
+            <p class="bio">Shuu-rinshu</p>
+            <a href="https://github.com/AkirinShu">Github</a>
+            <a href="https://space.bilibili.com/93628520">Bilibili</a>
+            <p>QQ: 3541347237</p>
+            <p>Email: shuurinshu@qq.com</p>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link active">首页</a></li>
+                <li><a href="content.html" class="nav-link">内容</a></li>
+                <!-- <li><a href="projects.html" class="nav-link">项目</a></li> -->
+            </ul>
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <!-- 欢迎 -->
+        <section class="home-intro">
+            <p class="article-meta">PERSONAL SPACE / 2026</p>
+            <h2 class="art-title">秋霖澍的空间</h2>
+            <p class="art-text">你好！我是秋霖澍<abbr title="对于能够阅读中文网页的访客来说，不必标注汉字的英语发音">（日语罗马字shuurinshu）</abbr>，一名计算机科学、二次元、同人创作与地区民俗学爱好者。</p>
+            <p class="art-text">这里记录我的知识、思考，以及正在进行的各种项目。</p>
+        </section>
+
+        <!-- 最近内容 -->
+        <section>
+            <h2 class="section-title">最近内容</h2>
+            <div class="article-list">
+
+                <!-- <article class="article-card">
+                    <h3><a href="articles/demo2.html">为什么我要做江西东方社群平台</a></h3>
+                    <p class="meta">2026-08-13 · 思考</p>
+                    <p class="excerpt">从地区同人活动与社群生态出发，思考一个长期存在的地区性社群平台应该是什么样子。</p>
+                </article>
+
+                <article class="article-card">
+                    <h3><a href="articles/demo2.html">纯静态博客应该如何组织项目？</a></h3>
+                    <p class="meta">2026-08-13 · 网站</p>
+                    <p class="excerpt">文章、项目与长期实践并不是同一种内容，因此也不应该使用同一种信息结构。</p>
+                </article>
+
+                <article class="article-card">
+                    <h3><a href="articles/demo2.html">GitHub Pages 能不能成为真正的个人网站？</a></h3>
+
+                    <p class="meta">2026-08-12 · 技术</p>
+
+                    <p class="excerpt">从纯静态网站、HTML 内容组织以及后端需求几个方面重新考虑个人博客的实现方式。</p>
+                </article> -->
+
             </div>
-            
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="nav-link active">首页</a></li>
-                    <li><a href="articles/demo.html" class="nav-link">示例文章</a></li>
-                    <li><a href="projects.html" class="nav-link">项目</a></li>
-                </ul>
-            </nav>
-        </aside>
+            <!-- <p><a href="content.html">查看全部内容 →</a></p> -->
+        </section>
 
-        <!-- 右侧内容区 -->
-        <main class="content">
-            <section class="view active">
-                <h2 class="section-title">最新文章</h2>
-                <div class="article-list">
-                    <article class="article-card">
-                        <h3><a href="articles/demo.html">示例文章：语义化 HTML 写作指南</a></h3>
-                        <p class="article-meta">发布于 2026-08-12</p>
-                        <p class="article-excerpt">本文演示如何使用语义化 HTML 类和 CSS 样式系统来编写文章，无需 Markdown 转换即可获得良好的阅读体验。</p>
-                    </article>
-                </div>
-                
-                <h2 class="section-title">项目展示</h2>
-                <div class="project-list">
-                    <div class="project-card">
-                        <h3><a href="projects.html#web-dev">Web 开发</a></h3>
-                        <p>现代前端技术与静态网站构建</p>
+        <!-- 当前项目 -->
+        <section>
+            <h2 class="section-title">正在进行</h2>
+            <div class="project-list">
+
+                <!-- <article class="project-card project-card-featured">
+                    <p class="project-status">开发中</p>
+                    <h3><a href="projects.html#jxth-community">江西东方社群网</a></h3>
+
+                    <p class="description">面向江西地区东方Project爱好者的社群平台，用于连接活动、创作者、作品与地区同人文化资料。</p>
+
+                    <div class="tags">
+                        <span class="tag">Web</span>
+                        <span class="tag">社区</span>
+                        <span class="tag">东方Project</span>
                     </div>
-                    <div class="project-card">
-                        <h3><a href="projects.html#research">研究项目</a></h3>
-                        <p>学术研究与技术探索</p>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-status">研究中</p>
+
+                    <h3><a href="projects.html#jiangxi-folklore">江西地方文化资料整理</a></h3>
+
+                    <p class="description">对江西地方民俗、文化与互联网资料进行长期整理与记录。</p>
+
+                    <div class="tags">
+                        <span class="tag">研究</span>
+                        <span class="tag">资料整理</span>
                     </div>
+                </article> -->
+
+            </div>
+            <!-- <p><a href="projects.html">查看项目档案 →</a></p> -->
+        </section>
+
+        <!-- 关于 -->
+        <section>
+            <h2 class="section-title">友情链接</h2>
+            <div class="about-section">
+                <div class="about-card">
+                    <!-- <h3>秋霖澍的个人空间</h3>
+                    <p class="about-text">
+                        你好！我是秋霖澍（shuurinshu），
+                        一名计算机科学、二次元、同人创作与地区民俗学爱好者。
+                        （×1 成分复杂）
+                    </p>
+                    <p class="about-text">
+                        本站开放源代码：
+                        <a href="https://github.com/AkirinShu/akirinshu.github.io">Github</a>
+                    </p>
+
+                    <p class="about-text">友情链接</p> -->
+
+                    <ul class="art-list about-links">
+                        <li><a href="https://seikasahara.com">卡尔霍恩的小屋</a></li>
+                        <li><a href="https://newyorkhnt.com">纽约花残月</a></li>
+                        <li><a href="https://gensouedge.github.io">幻想边境</a>
+                        </li>
+                    </ul>
+
                 </div>
 
-                <!-- 关于栏目 -->
-                <h2 class="section-title">关于我</h2>
-                <div class="about-section">
-                    <div class="about-card">
-                        <h3>欢迎来到我的个人空间</h3>
-                        <p class="about-text">
-                            你好！我是秋霖澍（Shuu-rinshu），一名热爱技术与创作的开发者。
-                            这个博客是我分享技术文章、项目成果和个人思考的地方。
-                        </p>
-                        <p class="about-text">
-                            我相信简洁优雅的技术方案，专注于 Web 开发、开源工具和前沿技术探索。
-                            在这里，你可以找到实用的技术教程、有趣的项目展示，以及一些生活感悟。
-                        </p>
-                        <p class="about-text">
-                            如果你对我的内容感兴趣，欢迎通过以下方式联系我：
-                        </p>
-                        <ul class="art-list about-links">
-                            <li>📧 Email: shuurinshu@qq.com</li>
-                            <li>💬 QQ: 3541347237</li>
-                            <li>🐙 <a href="https://github.com/AkirinShu" target="_blank">GitHub</a></li>
-                            <li>📺 <a href="https://space.bilibili.com/93628520" target="_blank">Bilibili</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+
+    </main>
+
+</div>
+
 </body>
+
 </html>
